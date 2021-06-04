@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    @include('layouts.Style')
+    @include('layouts.Style')    <!--inlude Style page -->
   </head>
   <body>
     <div class="page-holder">
@@ -55,13 +55,13 @@
       <!--  Modal -->
       @include('layouts.Header')
       <!-- HERO SECTION-->
-      @yield('shop')
-      @yield('content')
+      @yield('shop')    <!-- shop page -->
+      @yield('content')  <!-- content of index page -->
       <footer class="bg-dark text-white">
        @include('layouts.Footer')    <!-- footer include -->
       </footer>
       <!-- JavaScript files-->
-       @include('layouts.Script')
+       @include('layouts.Script')   <!--inlude script page -->
       <script>
         // ------------------------------------------------------- //
         //   Inject SVG Sprite -
