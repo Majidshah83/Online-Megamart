@@ -15,7 +15,7 @@
                   <!-- Link--><a class="nav-link" href="/Productdeatil">Product detail</a>
                 </li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                  <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="/">Homepage</a><a class="dropdown-item border-0 transition-link" href="/Shop">Category</a><a class="dropdown-item border-0 transition-link" href="/Productdeatil">Product detail</a><a class="dropdown-item border-0 transition-link" href="/cart">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
+                  <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="/">Homepage</a><a class="dropdown-item border-0 transition-link" href="/Shop">Category</a><a class="dropdown-item border-0 transition-link" href="/Productdeatil">Product detail</a><a class="dropdown-item border-0 transition-link" href="/cart">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="/checkout">Checkout</a></div>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">
