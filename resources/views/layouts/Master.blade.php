@@ -56,7 +56,10 @@
       @include('layouts.Header')
       <!-- HERO SECTION-->
       @yield('shop')    <!-- shop page -->
-      @yield('content')  <!-- content of index page -->
+      @yield('content')  <!-- content is name  of Index page -->
+       @yield('product1')  <!-- product is name  Product detail page -->
+       @yield('cart')      <!-- cart is name  Cart detail page -->
+       @yield('checkout')   <!-- cart is name  Check out detail page -->
       <footer class="bg-dark text-white">
        @include('layouts.Footer')    <!-- footer include -->
       </footer>

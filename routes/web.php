@@ -14,10 +14,23 @@ use App\Http\Controllers\frontendcontroller;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.Index');
-});
-// Route::get('/',[frontendcontroller::class ,'index']);
-Route::get('/Shop', function () {
-    return view('layouts.Shop');
-});
+// Route::get('/', function () {
+//     return view('layouts.Index');
+// });
+Route::get('/',[frontendcontroller::class ,'index']);
+Route::get('/Shop',[frontendcontroller::class ,'shopdetail']);
+Route::get('/Productdeatil',[frontendcontroller::class ,'productdetail']);
+Route::get('/cart',[frontendcontroller::class,'cartdetail']);
+Route::get('/checkout',[frontendcontroller::class,'checkoutdetail']);
+
+
+// Route::get('/Shop', function () {
+//     return view('layouts.Shop');
+// });
+// Route::get('/', function () {
+//     return view('layouts.Index');
+// });
+
+// Route::get('/Productdeatil', function () {
+//     return view('layouts.Productdeatil');
+// });
