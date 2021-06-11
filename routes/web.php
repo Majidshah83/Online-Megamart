@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\FrontEndControllers\CartController;
 // use App\Http\Controllers\FrontEndControllers\Productcontroller;
 use App\Http\Controllers\FrontendController\maincontroller;
+use App\Http\Controllers\FrontendController\shopcontroller;
 
 
 /*
@@ -29,6 +30,7 @@ use App\Http\Controllers\FrontendController\maincontroller;
 // Route::get('/cart',[CartController::class,'cartdetail']);
 // Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 Route::get('/',[maincontroller::class ,'index']);
+Route::get('/Shop',[shopcontroller::class ,'shopdetail']);
 
 // Route::get('/Shop', function () {
 //     return view('layouts.Shop');
