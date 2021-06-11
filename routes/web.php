@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\frontendcontroller;
+use App\Http\Controllers\FrontEndControllers\Maincontroller;
+use App\Http\Controllers\FrontEndControllers\Shopcontroller;
+use App\Http\Controllers\FrontEndControllers\Checkoutcontroller;
+use App\Http\Controllers\FrontEndControllers\CartController;
+use App\Http\Controllers\FrontEndControllers\Productcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +21,11 @@ use App\Http\Controllers\frontendcontroller;
 // Route::get('/', function () {
 //     return view('layouts.Index');
 // });
-Route::get('/',[frontendcontroller::class ,'index']);
-Route::get('/Shop',[frontendcontroller::class ,'shopdetail']);
-Route::get('/Productdeatil',[frontendcontroller::class ,'productdetail']);
-Route::get('/cart',[frontendcontroller::class,'cartdetail']);
-Route::get('/checkout',[frontendcontroller::class,'checkoutdetail']);
+Route::get('/',[Maincontroller::class ,'index']);
+Route::get('/Shop',[Shopcontroller::class ,'shopdetail']);
+Route::get('/Productdeatil',[Productcontroller::class ,'productdetail']);
+Route::get('/cart',[CartController::class,'cartdetail']);
+Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 
 
 // Route::get('/Shop', function () {
