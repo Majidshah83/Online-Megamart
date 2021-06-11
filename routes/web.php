@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController\maincontroller;
 use App\Http\Controllers\FrontendController\shopcontroller;
 use App\Http\Controllers\FrontendController\productcontroller;
+use App\Http\Controllers\FrontendController\Cartcontroller;
+use App\Http\Controllers\FrontendController\Checkoutcontroller;
 
 
 /*
@@ -32,7 +34,9 @@ use App\Http\Controllers\FrontendController\productcontroller;
 // Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 Route::get('/',[maincontroller::class ,'index']);
 Route::get('/Shop',[shopcontroller::class ,'shopdetail']);
- Route::get('/Productdeatil',[productcontroller::class ,'productdetail']);
+Route::get('/Productdeatil',[productcontroller::class ,'productdetail']);
+Route::get('/cart',[cartcontroller::class,'cartdetail']);
+ Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 // Route::get('/Shop', function () {
 //     return view('layouts.Shop');
 // });
