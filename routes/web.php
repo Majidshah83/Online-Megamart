@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\FrontEndControllers\Productcontroller;
 use App\Http\Controllers\FrontendController\maincontroller;
 use App\Http\Controllers\FrontendController\shopcontroller;
+use App\Http\Controllers\FrontendController\productcontroller;
 
 
 /*
@@ -26,12 +27,12 @@ use App\Http\Controllers\FrontendController\shopcontroller;
 // });
 // Route::get('/',[Maincontroller::class ,'index']);
 // Route::get('/Shop',[Shopcontroller::class ,'shopdetail']);
-// Route::get('/Productdeatil',[Productcontroller::class ,'productdetail']);
+// Route::get('/Productdeatil',[productcontroller::class ,'productdetail']);
 // Route::get('/cart',[CartController::class,'cartdetail']);
 // Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 Route::get('/',[maincontroller::class ,'index']);
 Route::get('/Shop',[shopcontroller::class ,'shopdetail']);
-
+ Route::get('/Productdeatil',[productcontroller::class ,'productdetail']);
 // Route::get('/Shop', function () {
 //     return view('layouts.Shop');
 // });
