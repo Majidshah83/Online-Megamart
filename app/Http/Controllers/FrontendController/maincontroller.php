@@ -12,4 +12,9 @@ class maincontroller extends Controller
        return view('layouts.Index');
 
     }
+     public function dashboard(){
+        //this index controller
+       return view('AdminDashboard.dashboard');
+
+    }
 }

@@ -11,6 +11,8 @@ use App\Http\Controllers\FrontendController\shopcontroller;
 use App\Http\Controllers\FrontendController\productcontroller;
 use App\Http\Controllers\FrontendController\Cartcontroller;
 use App\Http\Controllers\FrontendController\Checkoutcontroller;
+use App\Http\Controllers\FrontendController\BannerController;
+
 
 
 /*
@@ -33,10 +35,14 @@ use App\Http\Controllers\FrontendController\Checkoutcontroller;
 // Route::get('/cart',[CartController::class,'cartdetail']);
 // Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
 Route::get('/',[maincontroller::class ,'index']);
+Route::get('/dashboard',[maincontroller::class ,'dashboard'])->name('dashboard');
 Route::get('/Shop',[shopcontroller::class ,'shopdetail']);
 Route::get('/Productdeatil',[productcontroller::class ,'productdetail']);
 Route::get('/cart',[cartcontroller::class,'cartdetail']);
  Route::get('/checkout',[Checkoutcontroller::class,'checkoutdetail']);
+
+ Route::resource('banner','App\Http\Controllers\FrontendController\BannerController');
+
 // Route::get('/Shop', function () {
 //     return view('layouts.Shop');
 // });
@@ -47,3 +53,7 @@ Route::get('/cart',[cartcontroller::class,'cartdetail']);
 // Route::get('/Productdeatil', function () {
 //     return view('layouts.Productdeatil');
 // });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
